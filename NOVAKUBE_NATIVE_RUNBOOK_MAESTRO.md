@@ -84,8 +84,9 @@ Se crea un hijo si hay más de una salida funcional, si surge un riesgo nuevo, s
 - RB-H06.03 Reintentos, límites de memoria, seguridad y resiliencia.
 
 ### H07 — Workspace, docking y terminal
+**Gate obligatorio del primer MVP (DEC-UX-001):** docking global único, ventanas desacopladas y multimonitor; no diferir estas capacidades.
 - RB-H07.01 Pestañas, paneles y layout persistente.
-- RB-H07.02 Ventanas desacopladas, restauración y múltiples monitores.
+- RB-H07.02 Ventanas desacopladas, restauración y múltiples monitores (**obligatorio para el primer MVP**).
 - RB-H07.03 PTY, renderizado, teclado y sesiones.
 - RB-H07.04 Cierre limpio, cancelación, permisos y procesos.
 
@@ -119,7 +120,7 @@ Se crea un hijo si hay más de una salida funcional, si surge un riesgo nuevo, s
 
 ## 3. Secuencia y dependencias
 
-**Empezar por H00.** La revisión visual produce UX-01. H01 puede iniciarse en paralelo en modo auditoría de solo lectura. La especificación temprana de H09 se nutre de H01, para que la arquitectura contemple migraciones desde el principio.
+**Empezar por H00.** La revisión visual produce UX-01. **Decisión de producto aprobada:** `docs/architecture/DEC-UX-001_WORKSPACE_MVP.md` exige ventanas desacopladas y multimonitor desde el primer MVP, con motor de docking global único; el alcance visual exacto se define en UX-01. H01 puede iniciarse en paralelo en modo auditoría de solo lectura. La especificación temprana de H09 se nutre de H01, para que la arquitectura contemple migraciones desde el principio.
 
 H02 requiere UX-01 y un inventario preliminar; H03 requiere el ADR de UI y el UX aprobado. H04 puede diseñarse mientras se desarrolla H03, pero las conexiones reales se prueban solamente en entornos autorizados. H05 depende de H04; H06 depende de H04/H05; H07 depende de H02/H03 y de H04 para terminales conectadas; H08 depende de dominios y permisos. H11 define controles durante todos los hitos. H12 solo certifica una publicación tras gates completas.
 
@@ -132,7 +133,7 @@ El orden es **por dependencias y experiencia validada**, no por preferencia de u
 **Ejecución documental:** auditar pantallas y comportamientos; escribir flujo catálogo → clúster → namespace → Pods → detalle → logs; registrar ajustes visuales y estados empty/loading/error/forbidden.  
 **Entregable de la IA de diseño futura:** wireflows, esquema de componentes y prototipo visual con datos falsos.  
 **Prueba de aceptación:** el usuario puede recorrer y comentar el flujo sin depender de Kubernetes real; quedan documentadas las decisiones y diferencias con NovaKube.  
-**Gate:** UX-01 aprobado por el usuario o REWORK.
+**Gate:** UX-01 aprobado por el usuario o REWORK. UX-01 debe incluir estados y recorridos de desacoplar, mover paneles entre monitores, acoplar, guardar/restaurar y desconectar un monitor (DEC-UX-001).
 
 ### H01 — Inventario del legado
 **Entrada:** acceso de solo lectura al árbol antiguo y documentación vigente.  
@@ -142,7 +143,7 @@ El orden es **por dependencias y experiencia validada**, no por preferencia de u
 
 ### H02 — Arquitectura y selección UI
 **Entrada:** UX-01 y mapa preliminar de H01.  
-**Ejecución:** pruebas equivalentes para iced, egui y alternativas justificadas: paneles, tabla grande, múltiples ventanas, navegación de teclado, accesibilidad, terminal y redimensionado. Diseñar límites entre presentación, aplicación, dominio y adaptadores.  
+**Ejecución:** pruebas equivalentes para iced, egui y alternativas justificadas: paneles, tabla grande, múltiples ventanas **desacopladas y multimonitor obligatorias en MVP**, navegación de teclado, accesibilidad, terminal y redimensionado. Diseñar límites entre presentación, aplicación, dominio y adaptadores.
 **Entregable:** matriz con resultados observados, riesgos, ADR-001 y ADR-002.  
 **Gate:** decisión revisable fundamentada; no fijar framework antes del experimento.
 
@@ -174,7 +175,7 @@ El orden es **por dependencias y experiencia validada**, no por preferencia de u
 **Entrada:** UI seleccionada y shell validado; H04 para sesiones remotas.  
 **Ejecución:** docking, multiventana, layout persistente, PTY, comandos y limpieza de procesos.  
 **Entregable:** demo de restauración y pruebas de ciclo de vida.  
-**Gate:** no se abandonan procesos al cerrar vistas ni se mezclan sesiones.
+**Gate:** no se abandonan procesos al cerrar vistas ni se mezclan sesiones; desacoplar, mover entre monitores, reacoplar y restaurar layout visual inerte deben verificarse antes de aceptar el primer MVP (DEC-UX-001).
 
 ### H08 — Incidentes
 **Entrada:** recursos y observabilidad, modelo de permisos definido.  
