@@ -8,7 +8,7 @@ Objetivo: nueva aplicación de escritorio Rust nativa, sin Electron, Tauri ni We
 1. `NOVAKUBE_NATIVE_MANIFIESTO.md` — visión, límites y responsabilidades.
 2. `NOVAKUBE_NATIVE_RUNBOOK_MAESTRO.md` — árbol de hitos y sub-runbooks.
 3. `docs/AGENT_PROMPT_PROTOCOL.md` — reglas OBLIGATORIAS para preparar cada prompt, preflight, roles, calidad y continuidad.
-4. Runbook/prompt específico de la tarea; el primer encargo es `docs/prompts/H00/RB-H00.01_SONNET_5_5_HAIKU.md`.
+4. Runbook/prompt específico de la tarea: primero `docs/prompts/H00/RB-H00.01_REQA_SONNET_HAIKU.md` para cerrar el QA de H00.01; solamente después de GO humano, `docs/prompts/H00/RB-H00.02_FLUJOS_SONNET_HAIKU.md`. El prompt inicial archivado es `docs/prompts/H00/RB-H00.01_SONNET_5_5_HAIKU.md`.
 
 ## Antes de redactar un nuevo prompt
 
