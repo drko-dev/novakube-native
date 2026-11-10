@@ -55,6 +55,7 @@ Se crea un hijo si hay más de una salida funcional, si surge un riesgo nuevo, s
 - RB-H01.05 Matriz R/A/N/X, licencias, contratos y pruebas de equivalencia.
 
 ### H02 — Arquitectura y elección del framework UI
+- **RB-H02.00 Primer spike técnico Rust nativo (autorizado como experimento aislado antes del gate completo):** prototipo visual con datos sintéticos, ventana nativa desacoplable, pruebas preliminares de monitores y comparación egui/iced. No selecciona framework ni inicia H03. Prompt: `docs/prompts/H02/RB-H02.00_SPIKE_UI_NATIVE_SONNET_HAIKU.md`.
 - RB-H02.01 Matriz comparativa iced, egui y alternativas nativas.
 - RB-H02.02 Experimento controlado: tabla densa, docking, ventanas y teclado.
 - RB-H02.03 Diseño de estado, tareas asíncronas, errores y cancelación.
@@ -122,7 +123,7 @@ Se crea un hijo si hay más de una salida funcional, si surge un riesgo nuevo, s
 
 **Empezar por H00.** La revisión visual produce UX-01. **Decisión de producto aprobada:** `docs/architecture/DEC-UX-001_WORKSPACE_MVP.md` exige ventanas desacopladas y multimonitor desde el primer MVP, con motor de docking global único; el alcance visual exacto se define en UX-01. H01 puede iniciarse en paralelo en modo auditoría de solo lectura. La especificación temprana de H09 se nutre de H01, para que la arquitectura contemple migraciones desde el principio.
 
-H02 requiere UX-01 y un inventario preliminar; H03 requiere el ADR de UI y el UX aprobado. H04 puede diseñarse mientras se desarrolla H03, pero las conexiones reales se prueban solamente en entornos autorizados. H05 depende de H04; H06 depende de H04/H05; H07 depende de H02/H03 y de H04 para terminales conectadas; H08 depende de dominios y permisos. H11 define controles durante todos los hitos. H12 solo certifica una publicación tras gates completas.
+**Excepción acotada:** RB-H02.00 puede ejecutarse con UX-01 aún en borrador y H00.02 IN_REVIEW, porque es una prueba técnica aislada autorizada para obtener código nativo visible y datos de viabilidad sin conexiones reales. **H02 completo sigue requiriendo UX-01 y un inventario preliminar**; H03 requiere el ADR de UI y el UX aprobado. H04 puede diseñarse mientras se desarrolla H03, pero las conexiones reales se prueban solamente en entornos autorizados. H05 depende de H04; H06 depende de H04/H05; H07 depende de H02/H03 y de H04 para terminales conectadas; H08 depende de dominios y permisos. H11 define controles durante todos los hitos. H12 solo certifica una publicación tras gates completas.
 
 El orden es **por dependencias y experiencia validada**, no por preferencia de una IA. Cada nodo se convierte en READY únicamente después de cerrar entradas y criterios.
 

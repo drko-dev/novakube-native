@@ -8,20 +8,20 @@ Objetivo: nueva aplicación de escritorio Rust nativa, sin Electron, Tauri ni We
 1. `NOVAKUBE_NATIVE_MANIFIESTO.md` — visión, límites y responsabilidades.
 2. `NOVAKUBE_NATIVE_RUNBOOK_MAESTRO.md` — árbol de hitos y sub-runbooks.
 3. `docs/AGENT_PROMPT_PROTOCOL.md` — reglas OBLIGATORIAS para preparar cada prompt, preflight, roles, calidad y continuidad.
-4. Runbook/prompt específico de la tarea: primero `docs/prompts/H00/RB-H00.01_REQA_SONNET_HAIKU.md` para cerrar el QA de H00.01; solamente después de GO humano, `docs/prompts/H00/RB-H00.02_FLUJOS_SONNET_HAIKU.md`. El prompt inicial archivado es `docs/prompts/H00/RB-H00.01_SONNET_5_5_HAIKU.md`.
+4. **Estado actual:** H00.01 ACCEPTED WITH DOCUMENTED DEBT; H00.02 IN_REVIEW (Haiku PASS con reservas, UX-01 NO aprobado). DEC-UX-001 y DEC-UX-002 aprobadas. **Encargo activo de implementación experimental:** `docs/prompts/H02/RB-H02.00_SPIKE_UI_NATIVE_SONNET_HAIKU.md` (únicamente código Rust aislado en `experiments/ui/`, no H03). Los prompts H00 permanecen como historial.
 
 ## Antes de redactar un nuevo prompt
 
 Preguntá explícitamente al usuario **qué IA/modelo y plataforma** usará para ejecutar, y **qué IA/modelo** usará para testing. Si lo indicó en el pedido actual, no repitas la pregunta. Verificá prácticas específicas y capacidades de esa IA, sin asumir funciones que no estén disponibles.
 
-**En el primer hito ya están elegidos:** Sonnet 5.5 como coordinador y Haiku como tester independiente. Es una decisión SOLO para RB-H00.01: volver a consultar antes de otro prompt.
+**Para RB-H02.00, confirmado nuevamente por el usuario:** Claude Code con Sonnet 5.5 coordinador multiagente y Haiku revisor independiente. Para el siguiente prompt nuevo, volver a consultar el modelo/entorno según protocolo.
 
 ## Contexto y rutas
 
 - Repo NUEVO, único destino de escritura: `$HOME/Documents/lens/novakube-native`, GitHub `drko-dev/novakube-native` (main).
 - Repo LEGADO de referencia, SOLO LECTURA: `$HOME/Documents/lens/lens-v6-ui-corrections`, GitHub `drko-dev/lens`.
 - `$HOME/Documents/lens` es el workspace PADRE; no usarlo como Git root.
-- Trabajo de código del nuevo producto estará reservado a IAs ejecutoras autorizadas en hitos posteriores; la fase actual es de auditoría y documentación.
+- En RB-H02.00 las IAs ejecutoras están autorizadas a **crear exclusivamente prototipos Rust aislados** bajo `experiments/ui/` y documentación/evidencia del spike según el prompt. No equivale a permiso de modificar el producto original ni de comenzar H03. H00.02 sigue en revisión. El asistente de arquitectura no escribe código de aplicación.
 - No leer ni publicar secretos, kubeconfigs, capturas privadas o contenido sensible.
 - Nunca alterar, borrar o sincronizar automáticamente el repositorio original.
 
