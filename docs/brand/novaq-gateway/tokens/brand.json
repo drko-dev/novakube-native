@@ -1,0 +1,51 @@
+{
+  "name": "Nova Gateway",
+  "family": "NovaKube",
+  "version": "1.0.1",
+  "selectedConcept": "NovaKube Core, primera de tres propuestas",
+  "primaryReference": "NovaKube-SaaS/services/saas-api/app/static/css/novaq_tokens.css",
+  "colors": {
+    "background": "#15181C",
+    "surface": "#252B31",
+    "accent": "#45D6B0",
+    "accentHover": "#36BA97",
+    "accentDark": "#2EA888",
+    "accentLight": "#6CE2C3",
+    "text": "#E8EDF1",
+    "textSecondary": "#9AA6B2",
+    "textTertiary": "#7D8996",
+    "border": "#323942",
+    "borderSubtle": "#2C333B"
+  },
+  "fontStack": "-apple-system, BlinkMacSystemFont, SF Pro Display, SF Pro Text, Helvetica Neue, sans-serif",
+  "fontStatus": "Pila de fuentes existente en el frontend SaaS. Ningun binario tipografico incluido.",
+  "brandSymbol": "NovaKube Core: N clara estilizada con dos marcos redondeados concéntricos, verde interior y gris exterior, sobre fondo grafito. Ver assets/novakube-core.svg (reconstrucción desde captura, no master original).",
+  "measurementsObservedInSaaS": {
+    "brandMarkWidth": "30px",
+    "brandMarkHeight": "30px",
+    "brandMarkRadius": "7px",
+    "brandMarkBorder": "1.5px",
+    "appTopbarHeight": "56px",
+    "appSidebarWidth": "244px",
+    "baseRadius": "14px",
+    "smallRadius": "10px"
+  },
+  "semanticColors": {
+    "warningDark": "#FF9F0A",
+    "dangerDark": "#FF453A",
+    "customerBadgeBorder": "#60A5FA",
+    "customerBadgeText": "#93C5FD"
+  },
+  "restrictions": [
+    "No nuevos colores sin aprobacion",
+    "No cambios estructurales de aplicaciones al aplicar marca",
+    "No copiar OpenLens DevOps como fuente de marca",
+    "No fabricar logos o fuentes faltantes"
+  ],
+  "legacyTechnicalIdentifiers": [
+    "--novaq-*",
+    "novaq_tokens.css",
+    "docs/brand/novaq-gateway"
+  ],
+  "approvalReference": "Confirmación explícita del usuario y captura «01 — NovaKube Core», 2026-11-18"
+}

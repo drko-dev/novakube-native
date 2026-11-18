@@ -1,0 +1,15 @@
+/* Nova Gateway — paleta aprobada en SAAS-03; no rediseñar por hito. */
+:root {
+  --novaq-bg: #15181C;
+  --novaq-surface: #252B31;
+  --novaq-accent: #45D6B0;
+  --novaq-accent-hover: #36BA97;
+  --novaq-accent-dark: #2EA888;
+  --novaq-accent-light: #6CE2C3;
+  --novaq-text: #E8EDF1;
+  --novaq-muted: #9AA6B2;
+  --novaq-text-tertiary: #7D8996;
+  --novaq-border: #323942;
+  --novaq-border-subtle: #2C333B;
+  --novaq-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+}
