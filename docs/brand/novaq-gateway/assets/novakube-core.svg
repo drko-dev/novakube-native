@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" role="img" aria-labelledby="title desc">
+  <title id="title">NovaKube Core — Nova Gateway</title>
+  <desc id="desc">N blanca estilizada dentro de un marco redondeado verde y otro exterior gris, sobre grafito.</desc>
+  <rect x="0" y="0" width="216" height="216" rx="24" fill="#1A1B1F"/>
+  <rect x="38" y="38" width="140" height="140" rx="32" fill="none" stroke="#69727B" stroke-width="5"/>
+  <rect x="59" y="59" width="98" height="98" rx="24" fill="none" stroke="#45D6B0" stroke-width="7"/>
+  <path d="M82 132 V84 L134 132 V84" fill="none" stroke="#E8EDF1" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

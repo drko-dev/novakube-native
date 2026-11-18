@@ -1,11 +1,11 @@
-# Identidad visual maestra — NovaQ Gateway / familia NovaKube
+# Identidad visual maestra — Nova Gateway / familia NovaKube
 
-**Carpeta de referencia obligatoria para diseño y desarrollo visual.** Version 1.0.0, 17 noviembre 2026.
+**Carpeta de referencia obligatoria para diseño y desarrollo visual.** Versión documental 1.0.1, 18 noviembre 2026 (corrección de nombre e ícono aprobados).
 
 ## Aprobacion y fuente de verdad
 
 De las propuestas Core, Orbit y Gateway se eligio **NovaKube Core** (la primera);
-la identidad elegida se denomino **NovaQ Gateway**. La paleta fue fijada y
+la identidad elegida se denomina **Nova Gateway** (nombre actualizado, no «NovaQ»). La paleta fue fijada y
 utilizada en el SaaS como **SAAS-03**, en:
 Documents/NovaKube-SaaS/services/saas-api/app/static/css/novaq_tokens.css
 
@@ -41,15 +41,13 @@ para redistribuir. Conservar jerarquias y tamanos de cada componente ya
 existente; no cambiarlos para forzar una semejanza con otro producto.
 Logs y terminales pueden usar monospace de sistema sin alterar la fuente UI.
 
-## Marca y logotipo
+## Marca e ícono oficial
 
-Actualmente Gateway y Portal muestran un monograma **N** creado mediante CSS
-(.novaq-brand-mark). Medidas de la implementacion: 30 x 30 px, radio 7 px,
-borde 1.5 px verde de marca, tipografia negrita. Cabeceras implementadas:
-NovaKube Gateway (proveedor) y NovaKube Portal (cliente).
-No se encontro archivo maestro SVG/PNG de NovaQ en el directorio de imagenes
-del SaaS. No inventar uno ni usar el logo de OpenLens DevOps por defecto.
-El inventario y pendientes constan en assets/README.md.
+**Decisión confirmada por el usuario (18-11-2026):** concepto **01 — NovaKube Core**, nombre **Nova Gateway**. NO usar «NovaQ Gateway» como nombre comercial actual. La N clara tiene trazo continuo diagonal, dentro de **dos marcos redondeados concéntricos**: interior verde tecnológico y exterior gris, sobre baldosa grafito. Los marcos representan aislamiento y organización de contenedores dentro de contenedores. Este conjunto es el ícono aprobado; una N suelta, en un solo recuadro o con otro trazo no equivale a la marca.
+
+Referencia visual aportada por el usuario: captura de la propuesta «01 — NovaKube Core». En `assets/novakube-core.svg` se incluye una **reconstrucción vectorial a partir de esa captura** para permitir mantener su forma en repositorios. Es una reconstrucción de la referencia, no un archivo maestro original certificado. Nunca generar un logo distinto ni cambiar proporciones sin autorización.
+
+Nota de compatibilidad: la carpeta histórica se llama `docs/brand/novaq-gateway/`, las variables CSS `--novaq-*` y la hoja `novaq_tokens.css` conservan sus nombres técnicos originales para evitar regresiones. **Estos identificadores no son el nombre comercial de la marca.** El monograma CSS `.novaq-brand-mark` que usa el SaaS corresponde a una implementación anterior; debe migrarse al ícono aprobado mediante otro cambio probado, **sin tocar aquí el runtime de SaaS ni sus temas**.
 
 ## Componentes de la aplicacion actual
 
@@ -85,9 +83,9 @@ Un cambio visual distinto de la identidad se somete a aprobacion.
 - tokens/novaq_tokens.saas03.source.css: copia exacta de fuente original.
 - examples/palette.html: vista local con colores, tipografia y componentes.
 - assets/README.md: inventario de activos, licencias y pendientes.
+- assets/novakube-core.svg: reconstrucción vectorial del ícono oficial desde la referencia compartida.
 - AGENTS.md: instrucciones obligatorias para agentes de codigo.
 - SOURCE_MANIFEST.json: SHA-256 de la fuente original.
 
 **Distincion de estado:** la paleta es aprobada por SAAS-03; la fuente,
-medidas y monograma son lo actualmente implementado, no un nuevo rebranding.
-Los activos ausentes no se presentan como aprobados.
+medidas del monograma simple corresponden a la implementación histórica SaaS; no sustituyen el ícono de dos marcos aprobado. La reconstrucción SVG no se presenta como archivo maestro original.

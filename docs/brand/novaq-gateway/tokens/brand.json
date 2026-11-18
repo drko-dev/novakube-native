@@ -1,7 +1,7 @@
 {
-  "name": "NovaQ Gateway",
+  "name": "Nova Gateway",
   "family": "NovaKube",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "selectedConcept": "NovaKube Core, primera de tres propuestas",
   "primaryReference": "NovaKube-SaaS/services/saas-api/app/static/css/novaq_tokens.css",
   "colors": {
@@ -19,7 +19,7 @@
   },
   "fontStack": "-apple-system, BlinkMacSystemFont, SF Pro Display, SF Pro Text, Helvetica Neue, sans-serif",
   "fontStatus": "Pila de fuentes existente en el frontend SaaS. Ningun binario tipografico incluido.",
-  "brandSymbol": "Monograma N creado en CSS, clase .novaq-brand-mark. No es un logotipo maestro en SVG.",
+  "brandSymbol": "NovaKube Core: N clara estilizada con dos marcos redondeados concéntricos, verde interior y gris exterior, sobre fondo grafito. Ver assets/novakube-core.svg (reconstrucción desde captura, no master original).",
   "measurementsObservedInSaaS": {
     "brandMarkWidth": "30px",
     "brandMarkHeight": "30px",
@@ -41,5 +41,11 @@
     "No cambios estructurales de aplicaciones al aplicar marca",
     "No copiar OpenLens DevOps como fuente de marca",
     "No fabricar logos o fuentes faltantes"
-  ]
+  ],
+  "legacyTechnicalIdentifiers": [
+    "--novaq-*",
+    "novaq_tokens.css",
+    "docs/brand/novaq-gateway"
+  ],
+  "approvalReference": "Confirmación explícita del usuario y captura «01 — NovaKube Core», 2026-11-18"
 }

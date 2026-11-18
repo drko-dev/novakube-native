@@ -1,6 +1,6 @@
 {
   "captured": "2026-11-17",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "canonicalSource": "NovaKube-SaaS/services/saas-api/app/static/css/novaq_tokens.css",
   "canonicalSha256": "e9fa988c4e03e81286edd353433d0303cf0da7fded17295593a33fe93d21cd35",
   "files": [
@@ -10,6 +10,11 @@
     "tokens/brand.css",
     "tokens/novaq_tokens.saas03.source.css",
     "examples/palette.html",
-    "assets/README.md"
-  ]
+    "assets/README.md",
+    "assets/novakube-core.svg"
+  ],
+  "brandName": "Nova Gateway",
+  "selectedVisualConcept": "NovaKube Core",
+  "updated": "2026-11-18",
+  "note": "canonicalSha256 remains hash of original SAAS-03 CSS snapshot; logo vector recreated from user-provided image."
 }
