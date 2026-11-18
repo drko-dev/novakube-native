@@ -1,0 +1,90 @@
+/*
+ * NovaQ Gateway / NovaKube SaaS — Approved Visual Tokens (SAAS-03)
+ * Palette:
+ *   Graphite background : #15181C
+ *   Surface             : #252B31
+ *   Accent green        : #45D6B0
+ *   Soft light text     : #E8EDF1
+ */
+
+:root {
+    --novaq-bg: #15181C;
+    --novaq-surface: #252B31;
+    --novaq-accent: #45D6B0;
+    --novaq-accent-hover: #36BA97;
+    --novaq-text: #E8EDF1;
+    --novaq-muted: #9AA6B2;
+    --novaq-border: #323942;
+
+    --apple-blue: #45D6B0;
+    --apple-blue-dark: #2EA888;
+    --apple-blue-light: #6CE2C3;
+    --apple-blue-bg: rgba(69, 214, 176, 0.14);
+    --accent-text: #2EA888;
+    --success: #45D6B0;
+}
+
+[data-bs-theme="dark"],
+body.novaq-dark-shell {
+    --bg-page: var(--novaq-bg);
+    --bg-card: var(--novaq-surface);
+    --text-primary: var(--novaq-text);
+    --text-secondary: var(--novaq-muted);
+    --text-tertiary: #7D8996;
+    --border: var(--novaq-border);
+    --border-light: #2C333B;
+    --apple-blue: var(--novaq-accent);
+    --apple-blue-dark: var(--novaq-accent-hover);
+    --apple-blue-bg: rgba(69, 214, 176, 0.16);
+    --accent-text: var(--novaq-accent);
+    background-color: var(--novaq-bg);
+    color: var(--novaq-text);
+}
+
+.novaq-brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1.5px solid var(--novaq-accent);
+    background: var(--novaq-bg);
+    color: var(--novaq-accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+}
+
+.novaq-context-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    border: 1px solid var(--novaq-accent);
+    color: var(--novaq-accent);
+    background: rgba(69, 214, 176, 0.10);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.novaq-context-badge.is-tenant {
+    border-color: #60A5FA;
+    color: #93C5FD;
+    background: rgba(96, 165, 250, 0.12);
+}
+
+.btn-novaq {
+    background-color: var(--novaq-accent);
+    border-color: var(--novaq-accent);
+    color: #15181C;
+    font-weight: 600;
+}
+
+.btn-novaq:hover,
+.btn-novaq:focus {
+    background-color: var(--novaq-accent-hover);
+    border-color: var(--novaq-accent-hover);
+    color: #15181C;
+}
