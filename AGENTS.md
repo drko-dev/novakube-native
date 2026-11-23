@@ -16,3 +16,7 @@ Flujo obligatorio:
 4. Registrar brevemente las guías aplicadas y las decisiones no obvias en el cierre de cada tarea frontend.
 
 No usarla para tareas exclusivamente backend, Kubernetes, CI/CD, infraestructura, contratos, Git o tests sin cambio de UI. La skill **no sustituye** los contratos, gates, identidad de marca, tokens versionados, temas Claro/Oscuro/Auto, i18n `es-AR/en-US`, aislamiento multi-tenant, RBAC, convenciones de ingeniería, Gentle AI ni el alcance aprobado de los hitos. No agregar dependencias, migrar arquitectura ni ejecutar scans globales solo por incorporar esta política. Para Google Antigravity/Gemini, la instalación oficial adicional es `agy plugin install https://github.com/GoogleChrome/modern-web-guidance` si el agente local lo requiere.
+
+- **Referencia de gobierno canónica:** `NovaKube-Workspace/docs/standards/FRONTEND_ENGINEERING_STANDARD.md`.
+- **Alcance en `novakube-native`:** Este repositorio construye una aplicación de escritorio Rust nativa (sin Electron, Tauri ni WebView). Este estándar aplica únicamente a superficies web companion, portales de documentación HTML/CSS/JS o futuros frontends web (**Baseline Widely available** por defecto), nunca para introducir WebView/JS en la app nativa.
+- **Instalación global oficial:** Antigravity (`agy plugin install https://github.com/GoogleChrome/modern-web-guidance`) y Gemini CLI (`gemini extensions install https://github.com/GoogleChrome/modern-web-guidance --auto-update`). Agrupar búsquedas por funcionalidad (no por archivo).
